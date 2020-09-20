@@ -1,0 +1,67 @@
+.navbar{
+    background-color: #A70000;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 282px;
+    height: 91px;
+}
+
+.encabezado{
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.titulo{
+    font-size: 16px;
+    color: #A70000;
+    font-weight: 800;
+}
+
+.texto{
+    font-size: 14px;
+    color: #9A9999;
+}
+
+.formulario{
+    width: 40%;
+    margin: 40px auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;  
+}
+
+.order-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label{
+    font-size: 12px;
+    color: #9A9999;
+    margin-bottom: 8px;
+}
+
+.input-text{
+    border: 1px solid #A70000;
+    border-radius: 5px;
+    height: 30px;
+    width: 190px;
+}
+
+.boton-play{
+    background-color: #A70000;
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: #FF9900;
+}
