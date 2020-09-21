@@ -1,7 +1,9 @@
 import React from "react"
 import "../../Styles/home.css"
+import { Link } from "react-router-dom";
 
 function Home(){
+
     return(
         <>
             <nav className="navbar">
