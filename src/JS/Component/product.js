@@ -9,7 +9,6 @@ function Product(){
                 <div className="flex-element">
                     <img  src="/img/ensalada.png" alt="" />
                 </div>
-                
                 <div className="abc">
                     <div className="acompanamientos">
                         <p className="title-product">Ensalada de Estación</p>
