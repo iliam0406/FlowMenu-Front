@@ -13,9 +13,9 @@ import "../../Styles/general.css"
 function Entrada(){
     return(
         <>
-        <Navbar/>
+        <Navbar name="ENTRADA"/>
         <div className="cuerpo">
-        <Product/>
+        <Product />
         </div>
         <Footer />
         </>

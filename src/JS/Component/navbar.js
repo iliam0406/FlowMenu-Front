@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom";
 import "../../Styles/navbar.css"
 
-function Navbar(){
+function Navbar({name}){
     return(
         <>
         <div className="fijo-cabecera">
@@ -16,7 +16,7 @@ function Navbar(){
             <img className="item-icon" src="/img/bebidas.svg" alt="" />
         </nav>
         <div className="in-title">
-            <h1>ENTRADA</h1>
+            <h1>{name}</h1> 
             <hr className="hr-line"/>
         </div>
     </div>

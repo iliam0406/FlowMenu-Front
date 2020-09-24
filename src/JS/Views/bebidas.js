@@ -13,7 +13,7 @@ import "../../Styles/general.css"
 function Bebidas(){
     return(
         <>
-        <Navbar/>
+        <Navbar name="BEBIDAS Y JUGOS"/>
         <div className="cuerpo">
         <Product/>
         </div>

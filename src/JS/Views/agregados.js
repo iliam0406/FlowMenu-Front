@@ -14,7 +14,7 @@ import Incremento from "../Component/incremento";
 function Agregados(){
     return(
         <>
-            <Navbar/>
+            <Navbar name="AGREGADOS"/>
             <div className="cuerpo">
             <Mensaje />
             <Incremento/>
