@@ -1,4 +1,7 @@
-const getState = ({ getStore, setStore }) => {
+import React from "react"
+ 
+
+const Almacen = () => {
 	return {
 		store: {
 			entradas: [
@@ -47,4 +50,4 @@ const getState = ({ getStore, setStore }) => {
 	};
 };
 
-export default getState;
+export default Almacen;

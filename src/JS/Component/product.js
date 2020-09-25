@@ -1,36 +1,36 @@
-import React, {useContext} from "react";
-import {Context} from "../Store/store.js"
+import React from "react";
 
 import "../../Styles/product.css"
 
-function Product(){
-    const { store } = useContext(Context);
+function Product({store}){
     return(
         <>
-        {!!store.entradas &&
-		    store.entradas.results.map((entrada, i) =>{
-                return(
-                    <div className="product">
-                        <div className="flex-element">
-                            <img  src="/img/ensalada.png" alt="" />
-                        </div>
-                        <div className="abc">
-                            <div className="acompanamientos">
-                            <p className="title-product">Ensalada de Estación</p>
-                            <p className="description1">Tomate, Lechuga, Zanahoria, Pepino</p>
-                        </div>
-                        <div className="price-add">
-                            <p className="price">$700</p>
-                            <button className="boton-add" type="submit">AÑADIR</button>
-                        </div>
-                    </div>
-            </div>
-                );
-            })}
-            
+            {
+                store.map((product, i)=>{
+                    return(
+                        <>
+                            <div className="product">
+                                <div className="flex-element">
+                                    <img  src={product.img} alt="" />
+                                </div>
+                                <div className="abc">
+                                    <div className="acompanamientos">
+                                        <p className="title-product">{product.title}</p>
+                                        <p className="description1">{product.descripcion}</p>
+                                    </div>
+                                    <div className="price-add">
+                                        <p className="price">{product.precio}</p>
+                                        <button className="boton-add" type="submit">AÑADIR</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </>
+                    )
+                })
+            }
 
         </>
-    )
+                );
 }
 
 export default Product;
