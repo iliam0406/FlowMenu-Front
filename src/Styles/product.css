@@ -12,6 +12,10 @@
 .flex-element{
     flex-grow: 3;
 }
+
+.flex-element img{
+    width: 90px;
+}
 .abc{
     margin-left: 1em;
     flex-grow: 1;

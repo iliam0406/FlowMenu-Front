@@ -45,4 +45,5 @@ function Entrada(){
     )
 }
 
+
 export default Entrada;

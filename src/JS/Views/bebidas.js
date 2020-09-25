@@ -12,24 +12,24 @@ import "../../Styles/general.css"
 const store = [
     {
         id: 1,
-        title: "Coca Cola",
-        descripcion: "Tomate, Lechuga, Zanahoria, Pepino",
-        precio:"$ 400",
-        img: "/img/ensalada.png"
+        title: "Smoothies Blue and Red",
+        descripcion: "Fresa, Arándanos, Leche condensada",
+        precio:"$ 500",
+        img: "/img/smoothies-fresa.png"
     },
     {
         id: 2,
-        title: "Jugo de Naranja",
-        descripcion: "Tomate, Lechuga, Zanahoria, Pepino",
-        precio:"$ 300",
-        img: "/img/ensalada.png"
+        title: "Smoothies Green Free",
+        descripcion: "Manzana Verde, Kiwi, Miel de Abeja ",
+        precio:"$ 500",
+        img: "/img/smoothies-manzana.png"
     },
     {
         id: 3,
-        title: "Jugo de Mango",
-        descripcion: "Tomate, Lechuga, Zanahoria, Pepino",
-        precio:"$ 600",
-        img: "/img/ensalada.png"
+        title: "Smoothies Banana Lux",
+        descripcion: "Platano Fruta, Leche Condensada, ",
+        precio:"$ 500",
+        img: "/img/smoothies-platano.png"
     }
 ]
 
