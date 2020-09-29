@@ -7,7 +7,7 @@ function Navbar({name}){
         <>
         <div className="fijo-cabecera">
         <header className="img-logo">
-            <img className="logo-min" src="/img/logo-min.svg" alt=""  />
+          <Link to="/"><img className="logo-min" src="/img/logo-min.svg" alt=""  /></Link>  
         </header>
         <nav className="item-menu">
             <img className="item-icon" src="/img/icon1.svg" alt="" />

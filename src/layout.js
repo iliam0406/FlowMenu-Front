@@ -15,7 +15,6 @@ function Layout(){
     return(
         <>
             <BrowserRouter>
-              
                     <Switch>
                         <Route exact path="/" component={Home}/>
                         <Route exact path="/entrada" component={Entrada}/>
@@ -24,7 +23,6 @@ function Layout(){
                         <Route exact path="/agregados" component={Agregados}/>
                         <Route exact path="/pedidos" component={Pedidos}/>
                     </Switch>
-
             </BrowserRouter> 
         </>
     )

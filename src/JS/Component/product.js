@@ -8,8 +8,7 @@ function Product({store}){
             {
                 store.map((product, i)=>{
                     return(
-                        <>
-                            <div className="product">
+                            <div className="product" key={i}>
                                 <div className="flex-element">
                                     <img  src={product.img} alt="" />
                                 </div>
@@ -24,7 +23,6 @@ function Product({store}){
                                     </div>
                                 </div>
                             </div>
-                        </>
                     )
                 })
             }

@@ -59,8 +59,9 @@
 
 .boton-play{
     background-color: #A70000;
-    width: 90px;
-    height: 40px;
+    text-align: center;
+    width: 120px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     color: #FF9900;

@@ -8,3 +8,7 @@ footer{
     bottom: 0;
     position: fixed;
 }
+
+p{
+    color: #FF9900;
+}
