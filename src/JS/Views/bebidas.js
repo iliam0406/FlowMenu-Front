@@ -1,4 +1,5 @@
 import React from "react";
+import {useEffect, useState} from 'react'
 
 //Import Componentes
 import Navbar from "../Component/navbar"
@@ -9,36 +10,26 @@ import Footer from "../Component/footer"
 import "../../Styles/product.css"
 import "../../Styles/general.css"
 
-const store = [
-    {
-        id: 1,
-        title: "Smoothies Blue and Red",
-        descripcion: "Fresa, Arándanos, Leche condensada",
-        precio:"$ 500",
-        img: "/img/smoothies-fresa.png"
-    },
-    {
-        id: 2,
-        title: "Smoothies Green Free",
-        descripcion: "Manzana Verde, Kiwi, Miel de Abeja ",
-        precio:"$ 500",
-        img: "/img/smoothies-manzana.png"
-    },
-    {
-        id: 3,
-        title: "Smoothies Banana Lux",
-        descripcion: "Platano Fruta, Leche Condensada, ",
-        precio:"$ 500",
-        img: "/img/smoothies-platano.png"
-    }
-]
-
 function Bebidas(){
+
+    const[state, setstate] = useState({
+        bebida:[]
+    })
+
+    useEffect(() => {
+        fetch("./bd.json")
+        .then((resp)=> resp.json())
+        .then(data=>{
+            console.log(data)
+            setstate({...state, bebida:data.data_bebidas})
+        })
+    }, [])
+
     return(
         <>
         <Navbar name="BEBIDAS Y JUGOS"/>
         <div className="cuerpo">
-        <Product store={store}/>
+        <Product store={state.bebida}/>
         </div>
         <Footer />
         </>

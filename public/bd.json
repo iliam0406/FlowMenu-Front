@@ -1,0 +1,98 @@
+
+{
+    "data_entrada":[
+        {
+            "id": 1,
+            "title": "Ensalada de estación",
+            "descripcion": "Tomate, Lechuga, Zanahoria, Pepino",
+            "precio":"$ 700",
+            "img": "/img/ensalada.png"
+        },
+        {
+            "id": 2,
+            "title": "Consomé de pollo",
+            "descripcion": "Nada como un rico consomé de pollo",
+            "precio":"$ 400",
+            "img": "/img/consome.png"
+        },
+        {
+            "id": 3,
+            "title": "Ensalada Cesar",
+            "descripcion": "Lechuga, salsa Cesar, crutones de pan, queso parmesano.",
+            "precio":"$ 1.000",
+            "img": "/img/cesar.png"
+        }
+    ],
+
+    "data_principal":[
+        {
+            "id":1,
+            "title": "Pollo a la Plancha",
+            "descripcion": "Viene acompañado con: Arroz Blanco, Pure de Papa o Papas Fritas.",
+            "precio":"$ 2.500",
+            "img": "/img/1017.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Espaguetis Carbonara",
+            "descripcion": "Viene acompañado con: Salsa Boloñesa, Salsa Alfredo o Salsa Verde.",
+            "precio":"$ 1.800",
+            "img": "/img/espaguetis.png"
+        },
+        {
+            "id": 3,
+            "title": "Salmon a la Plancha",
+            "descripcion": "Viene acompañado con: Arroz Blanco, Pure de Papa o Papas Fritas.",
+            "precio":"$ 3.200",
+            "img": "/img/salmon.png"
+        }
+    ],
+
+    "data_bebidas":[
+        {
+            "id":1,
+            "title": "Smoothies Blue and Red",
+            "descripcion": "Fresa, Arándanos, Leche condensada",
+            "precio":"$ 500",
+            "img":"/img/smoothies-fresa.png"
+        },
+        {
+            "id": 2,
+            "title": "Smoothies Green Free",
+            "descripcion": "Manzana Verde, Kiwi, Miel de Abeja ",
+            "precio":"$ 500",
+            "img": "/img/smoothies-manzana.png"
+        },
+        {
+            "id":  3,
+            "title": "Smoothies Banana Lux",
+            "descripcion": "Platano Fruta, Leche Condensada, ",
+            "precio":"$ 500",
+            "img": "/img/smoothies-platano.png"
+        }
+    ],
+
+    "data_postres":[
+        {
+            "id":1,
+            "title": "Smoothies Blue and Red",
+            "descripcion": "Fresa, Arándanos, Leche condensada",
+            "precio":"$ 500",
+            "img":"/img/smoothies-fresa.png"
+        },
+        {
+            "id": 2,
+            "title": "Smoothies Green Free",
+            "descripcion": "Manzana Verde, Kiwi, Miel de Abeja ",
+            "precio":"$ 500",
+            "img": "/img/smoothies-manzana.png"
+        },
+        {
+            "id":  3,
+            "title": "Smoothies Banana Lux",
+            "descripcion": "Platano Fruta, Leche Condensada, ",
+            "precio":"$ 500",
+            "img": "/img/smoothies-platano.png"
+        }
+    ]
+}

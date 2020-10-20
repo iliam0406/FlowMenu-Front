@@ -1,24 +1,29 @@
 import React from "react";
 
+
+
 import "../../Styles/product.css"
 
 function Product({store}){
+
+    
+
     return(
         <>
             {
-                store.map((product, i)=>{
+                store.map((item, index)=>{
                     return(
-                            <div className="product" key={i}>
+                            <div className="product" key={index}>
                                 <div className="flex-element">
-                                    <img  src={product.img} alt="" />
+                                    <img  src={item.img} alt="" />
                                 </div>
                                 <div className="abc">
                                     <div className="acompanamientos">
-                                        <p className="title-product">{product.title}</p>
-                                        <p className="description1">{product.descripcion}</p>
+                                        <p className="title-product">{item.title}</p>
+                                        <p className="description1">{item.descripcion}</p>
                                     </div>
                                     <div className="price-add">
-                                        <p className="price">{product.precio}</p>
+                                        <p className="price">{item.precio}</p>
                                         <button className="boton-add" type="submit">AÑADIR</button>
                                     </div>
                                 </div>

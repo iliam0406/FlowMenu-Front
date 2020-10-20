@@ -3,10 +3,7 @@ import "../../Styles/home.css"
 import { Link } from "react-router-dom";
 
 function Home(){
-   
-    const [emailuser, setEmailUser] = useState(" ")
 
- 
 
     return(
         <>
@@ -23,9 +20,7 @@ function Home(){
                     <input 
                     className="input-text" 
                     type="email" 
-                    name="" 
-                    value={emailuser}
-                    onChange={e => setEmailUser(e.target.value)}
+                    name=""
                     /> 
                     <br/>
                     <Link to="/entrada"><button className="boton-play" type="submit" >ENTER</button></Link>
@@ -33,7 +28,6 @@ function Home(){
             </div>
         </>
     )
- 
 }
 
 

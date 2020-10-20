@@ -23,7 +23,7 @@ function Footer(){
 
     return(
         <footer>
-            <button onClick={Cambioetapa}>NO DESEO</button> 
+           <button onClick={Cambioetapa}></button> 
         </footer>
     )
 }

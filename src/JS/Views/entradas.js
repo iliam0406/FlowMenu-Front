@@ -1,4 +1,6 @@
 import React from "react";
+import {useHistory} from 'react-router-dom'
+import {useEffect, useState} from 'react'
 
 //Import Componentes
 import Navbar from "../Component/navbar"
@@ -9,36 +11,30 @@ import Footer from "../Component/footer"
 import "../../Styles/product.css"
 import "../../Styles/general.css"
 
-const store = [
-    {
-        id: 1,
-        title: "Ensalada de estación",
-        descripcion: "Tomate, Lechuga, Zanahoria, Pepino",
-        precio:"$ 700",
-        img: "/img/ensalada.png"
-    },
-    {
-        id: 2,
-        title: "Consomé de pollo",
-        descripcion: "Nada como un rico consomé de pollo",
-        precio:"$ 400",
-        img: "/img/consome.png"
-    },
-    {
-        id: 3,
-        title: "Ensalada Cesar",
-        descripcion: "Lechuga, salsa Cesar, crutones de pan, queso parmesano.",
-        precio:"$ 1.000",
-        img: "/img/cesar.png"
-    },
-]
+
+//const URL_API = '../../bd.json'
 
 function Entrada(){
+
+    const[state, setstate] = useState({
+        entradas: []
+    });
+
+    useEffect(() => {
+    fetch("./bd.json")
+    .then((resp)=> resp.json()
+    )
+    .then(data=>{
+        console.log(data)
+        setstate({...state, entradas: data.data_entrada})
+    })
+    }, [])
+    
     return(
         <>
             <Navbar name="ENTRADA"/>
             <div className="cuerpo">
-                <Product store={store}/> 
+                <Product store={state.entradas}/>    
             </div>
             <Footer />
         </>
